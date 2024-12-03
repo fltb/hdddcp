@@ -4,36 +4,54 @@ import java.util.BitSet;
 
 import org.antlr.v4.runtime.atn.ATNConfigSet;
 import org.antlr.v4.runtime.dfa.DFA;
+
 public class ParserErrorListener extends BaseErrorListener {
-    private boolean haserr = false;
+        class OutputErrHelper {
+                private int lastLine = -1;
 
-    public ParserErrorListener() {
-    }
+                public void PrintHelper(int line, String msg) {
+                        if (lastLine == line ) {
+                                return;
+                        }
+                        System.out.println("Error type B at line " + line + ": " + msg);
+                        lastLine = line;
+                }
 
-    public boolean hasErr() {
-        return haserr;
-    }
+                public boolean HasError() {
+                        return lastLine != -1;
+                }
+        }
 
-    @Override
-    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
-            String msg, RecognitionException e) {
-        System.err.println("Error type B at Line " + line + ": " + msg);
-        haserr = true;
-    }
+        private OutputErrHelper put =  new OutputErrHelper();
+        private boolean haserr = false;
 
-    @Override
-    public void reportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean exact,
-            BitSet ambigAlts, ATNConfigSet configs) {
-    }
+        public ParserErrorListener() {
+        }
 
-    @Override
-    public void reportAttemptingFullContext(Parser recognizer, DFA dfa, int startIndex, int stopIndex,
-            BitSet conflictingAlts, ATNConfigSet configs) {
-    }
+        public boolean hasErr() {
+                return haserr;
+        }
 
-    @Override
-    public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, int prediction,
-            ATNConfigSet configs) {
-    }
+        @Override
+        public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
+                        String msg, RecognitionException e) {
+                put.PrintHelper(line, msg);
+                haserr = true;
+        }
+
+        @Override
+        public void reportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean exact,
+                        BitSet ambigAlts, ATNConfigSet configs) {
+        }
+
+        @Override
+        public void reportAttemptingFullContext(Parser recognizer, DFA dfa, int startIndex, int stopIndex,
+                        BitSet conflictingAlts, ATNConfigSet configs) {
+        }
+
+        @Override
+        public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, int prediction,
+                        ATNConfigSet configs) {
+        }
 
 }
