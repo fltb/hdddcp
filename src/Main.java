@@ -55,30 +55,40 @@ public class Main {
         return true;
     }
 
-    private static void task4_4(String source) throws IOException {
+    private static boolean task4_4(String source) throws IOException {
         System.out.println("Task 4.4 gramma check begin::");
         SysYLexer sysYLexer = new SysYLexer(CharStreams.fromFileName(source));
         SysYParser sysYParser = new SysYParser(new CommonTokenStream(sysYLexer));
-        LexerErrorListener myErrorListener = new LexerErrorListener();
-        sysYParser.removeErrorListeners();
-        sysYParser.addErrorListener(myErrorListener);
         SysYParser.ProgramContext tree = sysYParser.program();
         ErrorHandleVisitor visitor = new ErrorHandleVisitor();
         visitor.visit(tree);
         if (visitor.hasError()) {
             System.out.println("Task 4.4 gramma check end::");
+            return false;
         } else {
             System.out.println("Task 4.4 gramma check no error end::");
+            return true;
         }
     }
 
+    private static void llvmgen(String source, String target) throws IOException {
+        System.out.println("llvm ir gen");
+        SysYLexer sysYLexer = new SysYLexer(CharStreams.fromFileName(source));
+        SysYParser sysYParser = new SysYParser(new CommonTokenStream(sysYLexer));
+        SysYParser.ProgramContext tree = sysYParser.program();
+        var visitor = new LLVMIRGenVisitor(target);
+        visitor.visit(tree);
+    }
+
     public static void main(String[] args) throws IOException {
-        if (args.length < 1) {
+        if (args.length < 2) {
             System.err.println("input path is required");
         }
         String source = args[0];
         if (task4_2(source) && task4_3(source)) {
-            task4_4(source);
+            if (task4_4(source)) {
+                llvmgen(args[0], args[1]);
+            }
         }
 
     }
