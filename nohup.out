@@ -1,0 +1,382 @@
+Error type A at Line 3:[errorMessage]
+Error type A at Line 3:LexerNoViableAltException('~')
+Error type A at Line 3:LexerNoViableAltException('~')
+2 int at Line 1.
+35   at Line 1.
+33 main at Line 1.
+25 ( at Line 1.
+26 ) at Line 1.
+35  
+ at Line 1.
+27 { at Line 2.
+35 
+    at Line 2.
+36 // line comment
+ at Line 3.
+35     at Line 4.
+37 /* 
+     block comment
+   */ at Line 4.
+35 
+    at Line 6.
+2 int at Line 7.
+35   at Line 7.
+33 i at Line 7.
+35   at Line 7.
+15 = at Line 7.
+35   at Line 7.
+34 0x1 at Line 7.
+32 ; at Line 7.
+35 
+ at Line 7.
+28 } at Line 8.
+INT int at Line 1.
+WS   at Line 1.
+IDENT main at Line 1.
+L_PAREN ( at Line 1.
+R_PAREN ) at Line 1.
+WS  
+ at Line 1.
+L_BRACE { at Line 2.
+WS 
+    at Line 2.
+LINE_COMMENT // line comment
+ at Line 3.
+WS     at Line 4.
+MULTILINE_COMMENT /* 
+     block comment
+   */ at Line 4.
+WS 
+    at Line 6.
+INT int at Line 7.
+WS   at Line 7.
+IDENT i at Line 7.
+WS   at Line 7.
+ASSIGN = at Line 7.
+WS   at Line 7.
+INTEGER_CONST 0x1 at Line 7.
+SEMICOLON ; at Line 7.
+WS 
+ at Line 7.
+R_BRACE } at Line 8.
+INT int at Line 1.
+IDENT main at Line 1.
+L_PAREN ( at Line 1.
+R_PAREN ) at Line 1.
+L_BRACE { at Line 2.
+INT int at Line 7.
+IDENT i at Line 7.
+ASSIGN = at Line 7.
+INTEGER_CONST 0x1 at Line 7.
+SEMICOLON ; at Line 7.
+R_BRACE } at Line 8.
+INT int at Line 1.
+IDENT func at Line 1.
+L_PAREN ( at Line 1.
+INT int at Line 1.
+IDENT arg at Line 1.
+R_PAREN ) at Line 1.
+L_BRACE { at Line 1.
+INT int at Line 2.
+IDENT l at Line 2.
+SEMICOLON ; at Line 2.
+IDENT l at Line 3.
+ASSIGN = at Line 3.
+MINUS - at Line 3.
+MINUS - at Line 3.
+MINUS - at Line 3.
+IDENT arg at Line 3.
+SEMICOLON ; at Line 3.
+RETURN return at Line 4.
+IDENT l at Line 4.
+SEMICOLON ; at Line 4.
+R_BRACE } at Line 5.
+INT int at Line 7.
+IDENT main at Line 7.
+L_PAREN ( at Line 7.
+R_PAREN ) at Line 7.
+L_BRACE { at Line 7.
+INT int at Line 8.
+IDENT x at Line 8.
+COMMA , at Line 8.
+IDENT y at Line 8.
+SEMICOLON ; at Line 8.
+IDENT x at Line 9.
+ASSIGN = at Line 9.
+INTEGER_CONST 02 at Line 9.
+SEMICOLON ; at Line 9.
+IDENT y at Line 10.
+ASSIGN = at Line 10.
+INTEGER_CONST 0x1 at Line 10.
+SEMICOLON ; at Line 10.
+IDENT x at Line 11.
+ASSIGN = at Line 11.
+IDENT x at Line 11.
+MINUS - at Line 11.
+INTEGER_CONST 1 at Line 11.
+PLUS + at Line 11.
+IDENT y at Line 11.
+SEMICOLON ; at Line 11.
+IF if at Line 12.
+L_PAREN ( at Line 12.
+PLUS + at Line 12.
+MINUS - at Line 12.
+NOT ! at Line 12.
+NOT ! at Line 12.
+NOT ! at Line 12.
+IDENT x at Line 12.
+R_PAREN ) at Line 12.
+L_BRACE { at Line 12.
+IDENT x at Line 13.
+ASSIGN = at Line 13.
+MINUS - at Line 13.
+MINUS - at Line 13.
+MINUS - at Line 13.
+INTEGER_CONST 2 at Line 13.
+SEMICOLON ; at Line 13.
+R_BRACE } at Line 14.
+ELSE else at Line 15.
+L_BRACE { at Line 15.
+IDENT x at Line 16.
+ASSIGN = at Line 16.
+INTEGER_CONST 1 at Line 16.
+PLUS + at Line 16.
+PLUS + at Line 16.
+IDENT y at Line 16.
+SEMICOLON ; at Line 16.
+R_BRACE } at Line 17.
+IDENT func at Line 18.
+L_PAREN ( at Line 18.
+IDENT x at Line 18.
+R_PAREN ) at Line 18.
+SEMICOLON ; at Line 18.
+RETURN return at Line 19.
+INTEGER_CONST 0 at Line 19.
+SEMICOLON ; at Line 19.
+R_BRACE } at Line 20.
+INT int at Line 1.
+IDENT array at Line 1.
+L_PAREN ( at Line 1.
+R_PAREN ) at Line 1.
+L_BRACE { at Line 2.
+INT int at Line 3.
+IDENT arr at Line 3.
+L_BRACKT [ at Line 3.
+INTEGER_CONST 10 at Line 3.
+R_BRACKT ] at Line 3.
+ASSIGN = at Line 3.
+L_BRACE { at Line 3.
+INTEGER_CONST 0 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 1 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 2 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 3 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 4 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 5 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 6 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 7 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 8 at Line 3.
+COMMA , at Line 3.
+INTEGER_CONST 9 at Line 3.
+R_BRACE } at Line 3.
+SEMICOLON ; at Line 3.
+INT int at Line 5.
+IDENT a1 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 0 at Line 5.
+COMMA , at Line 5.
+IDENT a2 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 3 at Line 5.
+COMMA , at Line 5.
+IDENT a3 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 5 at Line 5.
+COMMA , at Line 5.
+IDENT a4 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 7 at Line 5.
+COMMA , at Line 5.
+IDENT a5 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 9 at Line 5.
+COMMA , at Line 5.
+IDENT a6 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 1 at Line 5.
+COMMA , at Line 5.
+IDENT a7 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 2 at Line 5.
+COMMA , at Line 5.
+IDENT a8 at Line 5.
+ASSIGN = at Line 5.
+INTEGER_CONST 4 at Line 5.
+COMMA , at Line 5.
+IDENT a9 at Line 6.
+ASSIGN = at Line 6.
+INTEGER_CONST 6 at Line 6.
+SEMICOLON ; at Line 6.
+RETURN return at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a1 at Line 8.
+R_BRACKT ] at Line 8.
+PLUS + at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a2 at Line 8.
+R_BRACKT ] at Line 8.
+PLUS + at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a3 at Line 8.
+R_BRACKT ] at Line 8.
+PLUS + at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a4 at Line 8.
+R_BRACKT ] at Line 8.
+PLUS + at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a7 at Line 8.
+R_BRACKT ] at Line 8.
+PLUS + at Line 8.
+IDENT arr at Line 8.
+L_BRACKT [ at Line 8.
+IDENT a8 at Line 8.
+R_BRACKT ] at Line 8.
+SEMICOLON ; at Line 8.
+R_BRACE } at Line 9.
+INT int at Line 11.
+IDENT main at Line 11.
+L_PAREN ( at Line 11.
+R_PAREN ) at Line 11.
+L_BRACE { at Line 12.
+INT int at Line 13.
+IDENT q at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 1 at Line 13.
+COMMA , at Line 13.
+IDENT r at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 2 at Line 13.
+COMMA , at Line 13.
+IDENT s at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 04 at Line 13.
+COMMA , at Line 13.
+IDENT t at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 0x7 at Line 13.
+COMMA , at Line 13.
+IDENT u at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 0xA at Line 13.
+COMMA , at Line 13.
+IDENT v at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 0xb at Line 13.
+COMMA , at Line 13.
+IDENT w at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 0xcD at Line 13.
+COMMA , at Line 13.
+IDENT x at Line 13.
+ASSIGN = at Line 13.
+INTEGER_CONST 077 at Line 13.
+SEMICOLON ; at Line 13.
+INT int at Line 15.
+IDENT sum1 at Line 15.
+ASSIGN = at Line 15.
+IDENT q at Line 15.
+PLUS + at Line 15.
+IDENT r at Line 15.
+PLUS + at Line 15.
+IDENT s at Line 15.
+PLUS + at Line 15.
+IDENT t at Line 15.
+PLUS + at Line 15.
+IDENT u at Line 15.
+PLUS + at Line 15.
+IDENT v at Line 15.
+PLUS + at Line 15.
+IDENT w at Line 15.
+PLUS + at Line 15.
+IDENT x at Line 15.
+SEMICOLON ; at Line 15.
+INT int at Line 17.
+IDENT sum2 at Line 17.
+ASSIGN = at Line 17.
+IDENT array at Line 17.
+L_PAREN ( at Line 17.
+R_PAREN ) at Line 17.
+SEMICOLON ; at Line 17.
+INT int at Line 19.
+IDENT sum3 at Line 19.
+ASSIGN = at Line 19.
+IDENT sum1 at Line 19.
+PLUS + at Line 19.
+IDENT sum2 at Line 19.
+SEMICOLON ; at Line 19.
+RETURN return at Line 21.
+INTEGER_CONST 0 at Line 21.
+SEMICOLON ; at Line 21.
+R_BRACE } at Line 22.
+[96m[@0,0:2='int',<2>,1:0][0m[96m[@5,18:20='int',<2>,3:4][0m[91m[@10,30:30='=',<16>,3:16][0m[91m[@13,34:34=',',<32>,3:20][0m[91m[@15,37:37=',',<32>,3:23][0m[91m[@17,40:40=',',<32>,3:26][0m[91m[@19,43:43=',',<32>,3:29][0m[91m[@21,46:46=',',<32>,3:32][0m[91m[@23,49:49=',',<32>,3:35][0m[91m[@25,52:52=',',<32>,3:38][0m[91m[@27,55:55=',',<32>,3:41][0m[91m[@29,58:58=',',<32>,3:44][0m[91m[@32,62:62=';',<33>,3:48][0m[96m[@33,69:71='int',<2>,5:4][0m[91m[@35,76:76='=',<16>,5:11][0m[91m[@37,79:79=',',<32>,5:14][0m[91m[@39,84:84='=',<16>,5:19][0m[91m[@41,87:87=',',<32>,5:22][0m[91m[@43,92:92='=',<16>,5:27][0m[91m[@45,95:95=',',<32>,5:30][0m[91m[@47,100:100='=',<16>,5:35][0m[91m[@49,103:103=',',<32>,5:38][0m[91m[@51,108:108='=',<16>,5:43][0m[91m[@53,111:111=',',<32>,5:46][0m[91m[@55,116:116='=',<16>,5:51][0m[91m[@57,119:119=',',<32>,5:54][0m[91m[@59,124:124='=',<16>,5:59][0m[91m[@61,127:127=',',<32>,5:62][0m[91m[@63,132:132='=',<16>,5:67][0m[91m[@65,135:135=',',<32>,5:70][0m[91m[@67,148:148='=',<16>,6:11][0m[91m[@69,151:151=';',<33>,6:14][0m[96m[@70,158:163='return',<10>,8:4][0m[91m[@75,173:173='+',<11>,8:19][0m[91m[@80,183:183='+',<11>,8:29][0m[91m[@85,193:193='+',<11>,8:39][0m[91m[@90,203:203='+',<11>,8:49][0m[91m[@95,213:213='+',<11>,8:59][0m[91m[@100,222:222=';',<33>,8:68][0m[96m[@102,227:229='int',<2>,11:0][0m[96m[@107,244:246='int',<2>,13:4][0m[91m[@109,250:250='=',<16>,13:10][0m[91m[@111,253:253=',',<32>,13:13][0m[91m[@113,257:257='=',<16>,13:17][0m[91m[@115,260:260=',',<32>,13:20][0m[91m[@117,264:264='=',<16>,13:24][0m[91m[@119,268:268=',',<32>,13:28][0m[91m[@121,272:272='=',<16>,13:32][0m[91m[@123,277:277=',',<32>,13:37][0m[91m[@125,281:281='=',<16>,13:41][0m[91m[@127,286:286=',',<32>,13:46][0m[91m[@129,290:290='=',<16>,13:50][0m[91m[@131,295:295=',',<32>,13:55][0m[91m[@133,299:299='=',<16>,13:59][0m[91m[@135,305:305=',',<32>,13:65][0m[91m[@137,309:309='=',<16>,13:69][0m[91m[@139,314:314=';',<33>,13:74][0m[96m[@140,321:323='int',<2>,15:4][0m[91m[@142,330:330='=',<16>,15:13][0m[91m[@144,334:334='+',<11>,15:17][0m[91m[@146,338:338='+',<11>,15:21][0m[91m[@148,342:342='+',<11>,15:25][0m[91m[@150,346:346='+',<11>,15:29][0m[91m[@152,350:350='+',<11>,15:33][0m[91m[@154,354:354='+',<11>,15:37][0m[91m[@156,358:358='+',<11>,15:41][0m[91m[@158,361:361=';',<33>,15:44][0m[96m[@159,368:370='int',<2>,17:4][0m[91m[@161,377:377='=',<16>,17:13][0m[91m[@165,386:386=';',<33>,17:22][0m[96m[@166,393:395='int',<2>,19:4][0m[91m[@168,402:402='=',<16>,19:13][0m[91m[@170,409:409='+',<11>,19:20][0m[91m[@172,415:415=';',<33>,19:26][0m[96m[@173,422:427='return',<10>,21:4][0m[91m[@175,430:430=';',<33>,21:12][0mError type 4 at line 5: func a duplicate define.
+Error type 1 at line 10: var b not defined.
+Error type 3 at line 12: var test1 duplicate define.
+Error type 5 at line 16: assign type not match: int, array
+Error type 9 at line 17: Using the subscript operator on non-array var a2
+Error type 14 at line 18: assign to const value.
+Error type 6 at line 19: op type not match exp, types: function, array.
+Error type 8 at line 21: param of fun call a not match param length
+Error type 9 at line 22: Using the subscript operator on non-array var test1
+Error type 10 at line 23: Call non function: test1
+Error type 11 at line 24: assign to func: function, int
+Error type 7 at line 25: Return type Not match, expected int but detected function.
+Error type 4 at line 5: func a duplicate define.
+Error type 1 at line 10: var b not defined.
+Error type 3 at line 12: var test1 duplicate define.
+Error type 5 at line 16: assign type not match: int, array
+Error type 9 at line 17: Using the subscript operator on non-array var a2
+Error type 14 at line 18: assign to const value.
+Error type 6 at line 19: op type not match exp, types: function, array.
+Error type 8 at line 21: param of fun call a not match param length
+Error type 9 at line 22: Using the subscript operator on non-array var test1
+Error type 10 at line 23: Call non function: test1
+Error type 11 at line 24: assign to func: function, int
+Error type 7 at line 25: Return type Not match, expected int but detected function.
+Error type 4 at line 5: func a duplicate define.
+Error type 1 at line 10: var b not defined.
+Error type 3 at line 12: var test1 duplicate define.
+Error type 5 at line 16: assign type not match: int, array
+Error type 9 at line 17: Using the subscript operator on non-array var a2
+Error type 14 at line 18: assign to const value.
+Error type 6 at line 19: op type not match exp, types: function, array.
+Error type 8 at line 21: param of fun call a not match param length
+Error type 9 at line 22: Using the subscript operator on non-array var test1
+Error type 10 at line 23: Call non function: test1
+Error type 11 at line 24: assign to func: function, int
+Error type 7 at line 25: Return type Not match, expected int but detected function.
+Exception in thread "main" java.nio.file.NoSuchFileException: ./tests/test1.sysy
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.nio.file.Files.size(Files.java:2468)
+	at org.antlr.v4.runtime.CharStreams.fromPath(CharStreams.java:86)
+	at org.antlr.v4.runtime.CharStreams.fromFileName(CharStreams.java:105)
+	at Main.main(Main.java:30)
+line 4:12 token recognition error at: '~'
